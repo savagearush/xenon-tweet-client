@@ -21,7 +21,8 @@ export default function Login() {
 
     if (response.status === 200) {
       document.cookie = `accessToken=${response.headers["x-auth-token"]}`;
-      window.location.href = "/profile";
+      window.location.href =
+        "https://xenon-tweet-client-arush-sharmas-projects.vercel.app/profile";
       return response;
     }
 
