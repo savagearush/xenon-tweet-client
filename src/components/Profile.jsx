@@ -1,28 +1,12 @@
 import "./profile.css";
-import { useEffect, useState } from "react";
-import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
+import { useState } from "react";
 
 export default function Profile() {
   const [user, setUser] = useState(null);
   const [tweet, setTweet] = useState("");
 
-  // const query = useQuery({ queryKey: ["tweets"], queryFn: () => {} });
-
-  const mutation = useMutation({
-    mutationFn: (newTweet) => {
-      console.log(newTweet);
-    },
-    onSuccess: () => {
-      // Invalidate and refetch
-
-      queryClient.invalidateQueries({ queryKey: ["tweets"] });
-    },
-  });
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    const userId = 123;
-    mutation.mutate({ tweet, userId });
   };
 
   return (

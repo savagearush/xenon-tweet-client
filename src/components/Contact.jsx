@@ -12,7 +12,7 @@ function Contact() {
   const doSubmit = async (inputs) => {
     console.log("Inputs", inputs);
     const response = await axios.post(
-      "http://localhost:5000/user/contact",
+      "https://xenontweet.onrender.com/user/contact",
       inputs
     );
 
@@ -94,7 +94,7 @@ function Contact() {
         />
       </div>
       <div>
-        <label htmlFor="jobFunction">Job Function</label>
+        <label htmlFor="jobFuntion">Job Function</label>
         <br />
         <select
           onChange={handleChange}

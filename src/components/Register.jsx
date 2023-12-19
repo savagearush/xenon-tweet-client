@@ -12,7 +12,7 @@ export default function Register() {
 
   const doSubmit = async (inputs) => {
     const response = await axios.post(
-      "http://localhost:5000/user/register",
+      "https://xenontweet.onrender.com/register",
       inputs
     );
 
