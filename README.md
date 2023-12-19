@@ -1,7 +1,12 @@
-
 # Xenon Tweet Client
 
 Xenon Tweet Client is a React web application that allows users to view and interact with tweets from various sources. It uses Vite as a build tool and is deployed on Vercel.
+
+## How to use it
+
+- First user have to click Register Button then he has to register himself.
+- if He already had a account he can directly log in via login button
+- then after signup/login he will be redirected to blank home page where he can go to contact us page and fill details and those detail will be saved to mongodb database.
 
 ## Technologies used
 
@@ -10,8 +15,8 @@ Xenon Tweet Client is a React web application that allows users to view and inte
 - Axios: A promise-based HTTP client for the browser and node.js
 - React Query: A library for fetching, caching and updating data in React applications
 - React Router: A collection of navigational components for React
--  CSS: uses CSS for styling
--  Responsive : It is also fully responsive to mobile phones and laptop/pc.
+- CSS: uses CSS for styling
+- Responsive : It is also fully responsive to mobile phones and laptop/pc.
 - ... [other technologies]
 
 ## Setup
@@ -46,4 +51,5 @@ Here are the steps of the process you need to follow in order to integrate new c
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
 ## Developed By - Arush Sharma
