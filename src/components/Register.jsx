@@ -18,7 +18,7 @@ export default function Register() {
 
     if (response.status === 200) {
       document.cookie = `accessToken=${response.headers["x-auth-token"]}`;
-      navigate("/profile");
+      navigate("/");
       return response;
     }
 

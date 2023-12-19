@@ -36,8 +36,8 @@ function Navbar() {
             <h3>Welcome ! {currentUser.name}</h3>
             <ul>
               <li>
-                <Link to="/profile" className="contact__btn">
-                  Profile
+                <Link to="/tweet" className="contact__btn">
+                  Tweet
                 </Link>
               </li>
               <li>

@@ -1,7 +1,7 @@
-import "./profile.css";
+import "./tweet.css";
 import { useState } from "react";
 
-export default function Profile() {
+export default function Tweet() {
   const [user, setUser] = useState(null);
   const [tweet, setTweet] = useState("");
 

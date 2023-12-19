@@ -5,11 +5,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import App from "./App.jsx";
 import Login from "./components/Login.jsx";
-import Profile from "./components/Profile.jsx";
+import Tweet from "./components/Tweet.jsx";
 import Register from "./components/Register.jsx";
-import Contact from "./components/Contact.jsx";
+import Contact from "./components/contact.jsx";
+
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { jwtDecode } from "jwt-decode";
 import { AuthContext, AuthContextProvider } from "./context/authContext.jsx";
 const queryClient = new QueryClient();
 
@@ -17,7 +17,7 @@ const ProtectRoute = ({ children }) => {
   const { currentUser } = useContext(AuthContext);
 
   if (currentUser !== null) {
-    window.location.href = "/profile";
+    window.location.href = "/";
     return;
   }
 
@@ -46,16 +46,12 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/profile",
-        element: <Profile />,
+        path: "/tweet",
+        element: <Tweet />,
       },
       {
         path: "/contactus",
-        element: (
-          <ProtectRoute>
-            <Contact />
-          </ProtectRoute>
-        ),
+        element: <Contact />,
       },
     ],
   },
