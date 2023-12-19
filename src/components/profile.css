@@ -1,0 +1,52 @@
+.tweet__container {
+  position: absolute;
+  top: 100px;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 1px 33px -10px rgba(214, 214, 214, 1);
+  -moz-box-shadow: 0px 1px 33px -10px rgba(214, 214, 214, 1);
+  box-shadow: 0px 1px 33px -10px rgba(214, 214, 214, 1);
+}
+
+.label {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.tweet__btn {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #eef296;
+  color: black;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  border: 2px solid #0079ff;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.tweet__btn:hover {
+  background-color: #ffe17b;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 720px) {
+  .tweet__container {
+    position: absolute;
+    top: 300px;
+  }
+}
