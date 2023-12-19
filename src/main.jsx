@@ -7,7 +7,6 @@ import App from "./App.jsx";
 import Login from "./components/Login.jsx";
 import Tweet from "./components/Tweet.jsx";
 import Register from "./components/Register.jsx";
-import Contact from "./components/contact.jsx";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { AuthContext, AuthContextProvider } from "./context/authContext.jsx";
