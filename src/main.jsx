@@ -10,6 +10,7 @@ import Register from "./components/Register.jsx";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { AuthContext, AuthContextProvider } from "./context/authContext.jsx";
+import Contact from "./components/Contact.jsx";
 const queryClient = new QueryClient();
 
 const ProtectRoute = ({ children }) => {
