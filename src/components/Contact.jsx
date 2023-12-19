@@ -127,9 +127,6 @@ function Contact() {
       <button type="submit" className="submit_button">
         Submit
       </button>
-      <p>
-        Already have account ? <Link to="/login">Login Here</Link>
-      </p>
     </form>
   );
 }
