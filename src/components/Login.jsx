@@ -15,7 +15,7 @@ export default function Login() {
 
   const doSubmit = async (inputs) => {
     const response = await axios.post(
-      "https://xenontweet.onrender.com/login",
+      "https://xenontweet.onrender.com/user/login",
       inputs
     );
 
